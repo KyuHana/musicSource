@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=Potta+One&display=swap");
+@media screen and (min-width: 1440px) {
+  .wholeBody {
+    margin: 0 auto;
+    width: 1008px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .wholeBody {
+    margin: 0 auto;
+    width: 864px;
+  }
+}
+
+@media screen and (min-width: 964px) and (max-width: 1200px) {
+  .wholeBody {
+    margin: 0 auto;
+    width: 720px;
+  }
+}
+
+@media screen and (max-width: 964px) {
+  .wholeBody {
+    margin: 0 auto;
+    width: 578.4px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  width: 100%;
+}
+
+header {
+  margin-top: 50px;
+  min-height: 100px;
+  width: 100%;
+}
+
+.fanClubCon {
+  width: 100%;
+}
+
+.mainOptionBar {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+div.mainOptionBar :nth-child(1) {
+  margin-right: 10px;
+}
+
+.subOptionBar {
+  display: flex;
+}
+
+.FmusicContentBox {
+  height: 100vh;
+}

@@ -1,0 +1,84 @@
+@media screen and (min-width: 1440px) {
+  .navCon {
+    display: flex;
+    min-width: 1008px;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .navCon {
+    display: flex;
+    min-width: 864px;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 964px) and (max-width: 1200px) {
+  .navCon {
+    display: flex;
+    min-width: 720px;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 964px) {
+  .navCon {
+    display: flex;
+    min-width: 578.4px;
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+}
+.navCon {
+  display: flex;
+  width: 60%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+.navCon > div {
+  width: 33.3%;
+}
+
+.navCon .title {
+  font-family: "Potta One", cursive;
+  color: black;
+}
+
+.navCon__Come span {
+  font-weight: 900;
+}
+
+.navCon__Come .come {
+  font-weight: 900;
+}
+
+.navCon__Search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

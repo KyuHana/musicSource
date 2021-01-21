@@ -1,0 +1,105 @@
+@media screen and (min-width: 1440px) {
+  .musicContent {
+    margin-right: 1px;
+    margin-top: 1px;
+    width: 251px;
+    min-width: 251px;
+    height: 251px;
+    min-height: 251px;
+    position: relative;
+  }
+
+  .musicContent > img {
+    width: 251px;
+    min-width: 251px;
+    height: 251px;
+    min-height: 251px;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .musicContent > span:nth-of-type(1) {
+    left: 140px;
+  }
+
+  .musicContent > span:nth-of-type(2) {
+    left: 110px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .musicContent {
+    margin-right: 1px;
+    margin-top: 1px;
+    width: 215px;
+    min-width: 215px;
+    height: 215px;
+    min-height: 215px;
+    position: relative;
+  }
+
+  .musicContent > img {
+    width: 215px;
+    min-width: 215px;
+    height: 215px;
+    min-height: 215px;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .musicContent > span:nth-of-type(2) {
+    left: 140px;
+  }
+
+  .musicContent > span:nth-of-type(3) {
+    left: 110px;
+  }
+}
+
+@media screen and (min-width: 964px) and (max-width: 1200px) {
+  .musicContent {
+    margin-right: 1px;
+    margin-top: 1px;
+    width: 179px;
+    min-width: 179px;
+    height: 179px;
+    min-height: 179px;
+    position: relative;
+  }
+
+  .musicContent > img {
+    width: 179px;
+    min-width: 179px;
+    height: 179px;
+    min-height: 179px;
+    object-fit: cover;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 964px) {
+  .musicContent {
+    margin-right: 1px;
+    margin-top: 1px;
+    width: 288px;
+    min-width: 288px;
+    height: 288px;
+    min-height: 288px;
+    position: relative;
+  }
+
+  .musicContent > img {
+    width: 288px;
+    min-width: 288px;
+    height: 288px;
+    min-height: 288px;
+    object-fit: cover;
+    position: absolute;
+  }
+}
+
+.musicContent > span {
+  position: absolute;
+  color: white;
+  top: 120px;
+}
