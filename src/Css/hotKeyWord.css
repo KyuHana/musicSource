@@ -1,13 +1,134 @@
-.keyWordBox {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-right: 20px;
-  min-width: 130px;
+@media screen and (min-width: 1440px) {
+  .keyWordBox {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    border-radius: 10px;
+  }
+
+  .keyWordTitle {
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .keyWordColorTitle {
+    font-size: 21px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    color: black;
+    border-bottom: 1px solid orange;
+  }
 }
 
-.keyWordTitle {
-  font-size: 20px;
-  font-weight: 200;
-  overflow: hidden;
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .keyWordBox {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+
+  .keyWordTitle {
+    font-size: 17px;
+    font-weight: 600;
+
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .keyWordColorTitle {
+    font-size: 20px;
+    font-weight: 600;
+
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    border-bottom: 1px solid orange;
+  }
+
+  .keyWordImg {
+    max-height: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 964px) and (max-width: 1200px) {
+  .keyWordBox {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+
+  .keyWordTitle {
+    font-size: 15px;
+    font-weight: 600;
+
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .keyWordColorTitle {
+    font-size: 17px;
+    font-weight: 600;
+
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    border-bottom: 1px solid orange;
+  }
+
+  .keyWordImg {
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 964px) {
+  .keyWordBox {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+
+  .keyWordTitle {
+    font-size: 25px;
+    font-weight: 600;
+
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .keyWordColorTitle {
+    font-size: 27px;
+    font-weight: 600;
+
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    border-bottom: 1px solid orange;
+  }
+
+  .keyWordImg {
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 }

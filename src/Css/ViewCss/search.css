@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 1440px) {
+  .wholebody {
+    width: 100%;
+  }
+
+  .searchCon {
+    display: flex;
+
+    min-height: 50px;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .searchCon__Icon {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .searchCon__searchOne {
+    position: absolute;
+    left: 40px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+  }
+
+  .searchCon__searchCancel {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .searchCon__searchOne > form {
+    display: flex;
+    width: 100%;
+  }
+
+  .searchCon__searchOne > form > input {
+    border: none;
+    width: 100%;
+    font-size: 20px;
+  }
+}

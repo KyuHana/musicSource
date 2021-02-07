@@ -8,6 +8,8 @@
     position: fixed;
     top: 0;
     background-color: white;
+    z-index: 1000;
+    width: 60%;
   }
 }
 
@@ -21,6 +23,7 @@
     position: fixed;
     top: 0;
     background-color: white;
+    z-index: 1000;
   }
 }
 
@@ -34,6 +37,7 @@
     position: fixed;
     top: 0;
     background-color: white;
+    z-index: 1000;
   }
 }
 
@@ -47,17 +51,8 @@
     position: fixed;
     top: 0;
     background-color: white;
+    z-index: 1000;
   }
-}
-.navCon {
-  display: flex;
-  width: 60%;
-  height: 50px;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  background-color: white;
 }
 
 .navCon > div {
@@ -71,6 +66,14 @@
 
 .navCon__Come span {
   font-weight: 900;
+  margin-right: 10px;
+}
+
+.navCon__Come span:nth-of-type(2) {
+  border-radius: 3px;
+  background-color: orange;
+  padding: 6px;
+  color: white;
 }
 
 .navCon__Come .come {

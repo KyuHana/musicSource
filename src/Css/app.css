@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=Potta+One&display=swap");
 @media screen and (min-width: 1440px) {
+  .bigbody {
+    z-index: -9999;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
   .wholeBody {
     margin: 0 auto;
     width: 1008px;
@@ -35,32 +39,29 @@
 
 nav {
   width: 100%;
+  min-height: 50px;
+  background-color: rgba(0, 0, 0);
 }
 
 header {
-  margin-top: 50px;
   min-height: 100px;
   width: 100%;
+  padding-top: 50px;
 }
 
-.fanClubCon {
-  width: 100%;
-}
-
-.mainOptionBar {
-  display: flex;
-  align-items: flex-end;
-  margin-top: 10px;
-}
-
-div.mainOptionBar :nth-child(1) {
-  margin-right: 10px;
+.soundEffectCon {
+  width: 94%;
+  margin: 0 auto;
 }
 
 .subOptionBar {
-  display: flex;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.FmusicContentBox {
-  height: 100vh;
+.subOptionBar > .subOptionBarConWidth {
+  display: flex;
+  width: 94%;
+  margin: 0 auto;
+  overflow-x: scroll;
 }

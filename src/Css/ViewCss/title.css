@@ -1,0 +1,28 @@
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .mainOptionBar > .mainOptionBarConWidth > h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 964px) and (max-width: 1200px) {
+  .mainOptionBar > .mainOptionBarConWidth > h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 964px) {
+  .mainOptionBar > .mainOptionBarConWidth > h1 {
+    font-size: 22px;
+  }
+}
+.mainOptionBar {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.mainOptionBar > .mainOptionBarConWidth {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}

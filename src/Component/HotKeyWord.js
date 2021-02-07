@@ -1,20 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../Css/hotKeyWord.css';
-import FmusicContentBox from '../Component/FmusicContentBox.js';
+import FmusicContentBox from './View/FmusicContentBox/FmusicContentBox.js';
 
-function HotKeyWord({content}) {  
-    console.log(content);
+function HotKeyWord({changeIdNumber, content}) {  
+    const titleClass = content.isClicked ? "keyWordColorTitle" : "keyWordTitle";
     return(
-        <div className='keyWordBox'>
-            <span
-                onClick={(e, content) => {
-                    console.log(content);
-                    return (
-                    <FmusicContentBox content={content} />
-                    );
-                }} 
-                className="keyWordTitle"
-            >
+        <div className='keyWordBox' onClick={
+            () => {
+                changeIdNumber(content.id)
+            }
+        }>
+            <span className={titleClass}>
                 {content.name}
             </span>
         </div>

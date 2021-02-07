@@ -5,9 +5,8 @@
   }
 
   .musicContentBox {
-    width: 94%;
+    width: 100%;
     margin: 0 auto;
-    height: 100%;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -17,9 +16,8 @@
     display: flex;
     margin: 0 auto;
     width: 100%;
+    flex-direction: row;
     flex-wrap: wrap;
-    min-height: 500px;
-    overflow: hidden;
   }
 
   .musicContentBox__Option {
@@ -41,27 +39,12 @@
     max-height: 40px;
   }
 
-  .musicContentBox__Option > span:nth-of-type(3) {
-    position: absolute;
-    left: 390px;
-    font-size: 21px;
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .musicContentBox__Option > span:nth-of-type(2) {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    left: 124px;
-    color: black;
-  }
-
   .musicContentBox__Option > span:nth-of-type(1) {
     position: absolute;
     display: flex;
     align-items: center;
     left: 0px;
+    font-size: 30px;
   }
 }
 

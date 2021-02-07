@@ -1,6 +1,8 @@
 .mainTitle {
   display: flex;
+  flex-wrap: nowrap;
+  min-width: 100%;
+  min-height: 20px;
   overflow-x: scroll;
-  width: 100%;
-  margin-top: px;
+  margin-top: 10px;
 }

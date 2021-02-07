@@ -1,105 +1,432 @@
 @media screen and (min-width: 1440px) {
   .musicContent {
-    margin-right: 1px;
-    margin-top: 1px;
-    width: 251px;
-    min-width: 251px;
-    height: 251px;
-    min-height: 251px;
+    min-width: 175px;
+    height: 175px;
+    margin-right: 26px;
+
+    margin-bottom: 10px;
     position: relative;
   }
 
   .musicContent > img {
-    width: 251px;
-    min-width: 251px;
-    height: 251px;
-    min-height: 251px;
-    object-fit: cover;
+    width: 100%;
     position: absolute;
+    height: 175px;
+    object-fit: cover;
+    z-index: -9999;
   }
 
-  .musicContent > span:nth-of-type(1) {
-    left: 140px;
+  .musicContent > .onHoverDiv {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: rgba(255, 165, 0, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: height 0.2s linear;
   }
 
-  .musicContent > span:nth-of-type(2) {
-    left: 110px;
+  .musicContent:hover > .onHoverDiv {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 165, 0, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: height 0.1s linear;
+  }
+
+  .onHoverIconCon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .onHoverIconCon_inCon {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(1) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 80px;
+    bottom: 70px;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(2) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 80px;
+    bottom: 70px;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(3) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 80px;
+    bottom: 70px;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(1) {
+    visibility: visible;
+    opacity: 1;
+    right: 120px;
+    transition: visible 0.1s linear, opacity 0.1s linear, right 0.1s linear;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(2) {
+    visibility: visible;
+    opacity: 1;
+    transition: visible 0.1s linear, opacity 0.1s linear;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(3) {
+    visibility: visible;
+    opacity: 1;
+    right: 40px;
+    transition: visible 0.1s linear, opacity 0.1s linear, right 0.1s linear;
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .musicContent {
-    margin-right: 1px;
-    margin-top: 1px;
-    width: 215px;
-    min-width: 215px;
-    height: 215px;
-    min-height: 215px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    width: 193px;
+    min-width: 193px;
+    height: 193px;
+    min-height: 193px;
     position: relative;
   }
 
   .musicContent > img {
-    width: 215px;
-    min-width: 215px;
-    height: 215px;
-    min-height: 215px;
+    width: 193px;
+    min-width: 193px;
+    height: 193px;
+    min-height: 193px;
     object-fit: cover;
     position: absolute;
+    z-index: -9999;
   }
 
-  .musicContent > span:nth-of-type(2) {
-    left: 140px;
+  .musicContent > .onHoverDiv {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: rgba(255, 165, 0, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: height 0.2s linear;
   }
 
-  .musicContent > span:nth-of-type(3) {
-    left: 110px;
+  .musicContent:hover > .onHoverDiv {
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    background-color: rgba(255, 165, 0, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: height 0.1s linear;
+  }
+
+  .onHoverIconCon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .onHoverIconCon_inCon {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(1) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 90px;
+    bottom: 80px;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(2) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 90px;
+    bottom: 80px;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(3) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 90px;
+    bottom: 80px;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(1) {
+    visibility: visible;
+    opacity: 1;
+    right: 130px;
+    transition: visible 0.1s linear, opacity 0.1s linear, right 0.1s linear;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(2) {
+    visibility: visible;
+    opacity: 1;
+    transition: visible 0.1s linear, opacity 0.1s linear;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(3) {
+    visibility: visible;
+    opacity: 1;
+    right: 50px;
+    transition: visible 0.1s linear, opacity 0.1s linear, right 0.1s linear;
   }
 }
 
 @media screen and (min-width: 964px) and (max-width: 1200px) {
   .musicContent {
-    margin-right: 1px;
-    margin-top: 1px;
-    width: 179px;
-    min-width: 179px;
-    height: 179px;
-    min-height: 179px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    width: 159px;
+    min-width: 159px;
+    height: 159px;
+    min-height: 159px;
     position: relative;
   }
 
   .musicContent > img {
-    width: 179px;
-    min-width: 179px;
-    height: 179px;
-    min-height: 179px;
+    width: 159px;
+    min-width: 159px;
+    height: 159px;
+    min-height: 159px;
     object-fit: cover;
     position: absolute;
+    z-index: -9999;
+  }
+
+  .musicContent > .onHoverDiv {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: rgba(255, 165, 0, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: height 0.2s linear;
+  }
+
+  .musicContent:hover > .onHoverDiv {
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    background-color: rgba(255, 165, 0, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: height 0.1s linear;
+  }
+
+  .onHoverIconCon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .onHoverIconCon_inCon {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(1) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 60px;
+    bottom: 70px;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(2) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 70px;
+    bottom: 70px;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(3) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 80px;
+    bottom: 70px;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(1) {
+    visibility: visible;
+    opacity: 1;
+    right: 113px;
+    transition: visible 0.1s linear, opacity 0.1s linear, right 0.1s linear;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(2) {
+    visibility: visible;
+    opacity: 1;
+    transition: visible 0.1s linear, opacity 0.1s linear;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(3) {
+    visibility: visible;
+    opacity: 1;
+    right: 27px;
+    transition: visible 0.1s linear, opacity 0.1s linear, right 0.1s linear;
   }
 }
 
 @media screen and (max-width: 964px) {
   .musicContent {
-    margin-right: 1px;
-    margin-top: 1px;
-    width: 288px;
-    min-width: 288px;
-    height: 288px;
-    min-height: 288px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    width: 170px;
+    min-width: 170px;
+    height: 170px;
+    min-height: 170px;
     position: relative;
   }
 
   .musicContent > img {
-    width: 288px;
-    min-width: 288px;
-    height: 288px;
-    min-height: 288px;
+    width: 170px;
+    min-width: 170px;
+    height: 170px;
+    min-height: 170px;
     object-fit: cover;
     position: absolute;
+    z-index: -9999;
   }
-}
 
-.musicContent > span {
-  position: absolute;
-  color: white;
-  top: 120px;
+  .musicContent > .onHoverDiv {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: rgba(255, 165, 0, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: height 0.2s linear;
+  }
+
+  .musicContent:hover > .onHoverDiv {
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    background-color: rgba(255, 165, 0, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: height 0.1s linear;
+  }
+
+  .onHoverIconCon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .onHoverIconCon_inCon {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(1) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 70px;
+    bottom: 70px;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(2) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 70px;
+    bottom: 70px;
+  }
+
+  .onHoverIconCon_inCon > .icon:nth-of-type(3) {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    right: 70px;
+    bottom: 70px;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(1) {
+    visibility: visible;
+    opacity: 1;
+    right: 110px;
+    transition: visible 0.1s linear, opacity 0.1s linear, right 0.1s linear;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(2) {
+    visibility: visible;
+    opacity: 1;
+    transition: visible 0.1s linear, opacity 0.1s linear;
+  }
+
+  .musicContent:hover
+    > .onHoverIconCon
+    > .onHoverIconCon_inCon
+    > .icon:nth-of-type(3) {
+    visibility: visible;
+    opacity: 1;
+    right: 30px;
+    transition: visible 0.1s linear, opacity 0.1s linear, right 0.1s linear;
+  }
 }

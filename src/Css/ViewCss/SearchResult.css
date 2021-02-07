@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 1440px) {
+  .wholebody {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .inWholeBody {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  .searchCon {
+    display: flex;
+    min-width: 1008px;
+    min-height: 50px;
+    align-items: center;
+    width: 60%;
+    position: relative;
+  }
+
+  .searchCon__Icon {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .searchCon__searchOne {
+    position: absolute;
+    left: 40px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+  }
+
+  .searchCon__searchCancel {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .searchCon__searchOne > form {
+    display: flex;
+    width: 100%;
+  }
+
+  .searchCon__searchOne > form > input {
+    border: none;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .recommendBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .recommendSoundBox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 200px;
+    transition: transform 0.2s;
+  }
+
+  .recommendSoundBox:hover {
+    transform: scale(1.1);
+  }
+
+  .recommendSoundImg {
+    height: 200px;
+    width: 100%;
+  }
+
+  .recommendSoundBox > div > span {
+    font-weight: 300;
+    color: black;
+    font-size: 20px;
+  }
+}

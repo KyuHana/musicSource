@@ -1,51 +1,26 @@
 import React, {useState, useMemo} from 'react';
-import './Css/app.css';
-import HotKeyWordPage from './Component/HotKeyWordPage.js';
-import MainNav from './Component/mainNav.js';
-import Introduction from './Component/introduction.js';
-import FmusicContentBox from './Component/FmusicContentBox'
+import LandingPage from '../src/Component/View/LandingPage/LandingPage.js';
+import Search from '../src/Component/View/Search/Search.js';
+import searchResult from '../src/Component/View/SearchResult/SearchResult.js'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import SearchResult from '../src/Component/View/SearchResult/SearchResult.js';
 
 function App() {
-  
-  const [option,setOption] = useState([
-    {
-      uniqueId: 1,
-      optionName: '음악',
-
-    },
-    {
-      uniqueId: 2,
-      optionName: '움짤',
-
-    },
-  ])
   return(
-      <div className='wholeBody'>
-        <nav>
-          <MainNav />
-        </nav>
-        <header>
-          <Introduction />
-        </header>
-        <div className='mainOptionBar'>
-          <h1>
-            {option[0].optionName}
-          </h1>
-          <h4 onClick= {
-              () => {
-                  setOption([...option].reverse());
-                }
-              }
-          >
-            {option[1].optionName}
-          </h4>
-        </div>
-        
-        <div className='FmusicContentBox'>
-              <FmusicContentBox />
-        </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path='/' component={LandingPage}/>
+          <Route exact path='/search' component={Search}/>
+          <Route exact path='/searchResult' component={SearchResult} />
+        </Switch>
       </div>
-    );
-  }
+    </Router>  
+  );
+}
 
 export default App;
